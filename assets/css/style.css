@@ -168,26 +168,32 @@ body {
 }
 
 /* Community Page */
-
-.community-page h1 {
+.container-community-page {
+  padding: 30px 50px;
+}
+.container-community-page h1 {
   padding: 20px 20px 0 0;
 }
-.community-page h2 {
+.container-community-page h2 {
   padding: 20px 50px 20px 0;
   color: #ff5f15;
 }
 
-.community-page h3 a {
+.container-community-page h3 a {
   color: black;
 }
 
-.community-page p {
+.container-community-page p {
   width: 65%;
   padding: 0 0 20px 0;
 }
 
-.community-page p.sub-part {
+.container-community-page p.sub-part {
   padding: 0 0;
+}
+
+.about-us-page {
+  color: black;
 }
 
 footer {
@@ -196,4 +202,141 @@ footer {
   height: 100px;
   background: #ff5f15;
   margin-top: 30px;
+}
+
+/* Media Query */
+
+@media (max-width: 950px) {
+  .our-story-right img {
+    width: 100%;
+  }
+}
+
+/* Max-width 500px */
+
+@media (max-width: 500px) {
+  .about-us {
+    padding: 20px 10px;
+  }
+
+  .about-left {
+    display: none;
+  }
+
+  .about-right {
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .our-story {
+    padding: 0 10px;
+  }
+
+  .our-story-left {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .our-story-right {
+    display: none;
+  }
+
+  .our-community {
+    padding: 20px 20px;
+  }
+
+  .community-left {
+    display: none;
+  }
+
+  .community-right {
+    width: 100%;
+    padding: 20px 20px;
+  }
+}
+
+/* Max-width: 425px */
+@media (max-width: 425px) {
+  .about-us {
+    padding: 20px;
+  }
+
+  .about-left {
+    display: none;
+  }
+
+  .about-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .our-story-left {
+    width: 100%;
+  }
+
+  .our-story-right {
+    display: none;
+  }
+
+  .our-community {
+    padding: 20px 30px;
+  }
+
+  .community-left {
+    display: none;
+  }
+
+  .community-right {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Media Query for Communinity Page */
+
+@media (max-width: 768px) {
+  .container-community-page {
+    padding: 20px 40px;
+  }
+
+  .container-community-page p {
+    width: 90%;
+  }
+}
+
+/* Media Query @425px */
+@media (max-width: 425px) {
+  .container-community-page h1 {
+    padding: 20px 0;
+  }
+
+  .container-community-page h2 {
+    padding: 20px 0;
+  }
+
+  .container-community-page p {
+    width: 100%;
+  }
+}
+
+/* Media Query @320px */
+
+@media (max-width: 320px) {
+  .container-community-page {
+    padding: 0 20px;
+  }
+
+  .container-community-page h1 {
+    font-size: 20px;
+  }
+
+  .container-community-page h2 {
+    /* padding: 20px 0; */
+    font-size: 18px;
+  }
+
+  .container-community-page p {
+    /* padding: 20px 0; */
+    font-size: 15px;
+  }
 }
